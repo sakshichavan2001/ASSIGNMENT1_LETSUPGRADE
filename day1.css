@@ -1,0 +1,60 @@
+*{                            /* never give values in px since they do not help inrhe reponsiveness of a website */
+padding: 0px;                    /*give the values in % so that when we change the screen the element also changes  */
+margin: 0px;
+}
+
+.container{
+
+width:100%;
+background-color: aquamarine;
+display: inline-block;
+}
+
+.card
+{   /* here all the 4 divs with card are in the vertical because: div are block elements and they go in vertical direction the right margin takes up the whole space */
+    /* so the convert these div we can use flex box or inline box*/
+    height:200px;
+    width: 18%;
+    background-color: rgb(62, 113, 116);
+    display: inline-block; /* since we dont want our divs to be vertical and want it to be inline */
+}
+
+/* media queries: for tablet  refer:https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/  */
+@media(max-width:1024px)
+    {
+    .card{
+        background-color: rgb(221, 172, 66);
+        width:20%;   /* WILL CHANGE THE 4 CARD TO 2 PAGES ON A PAGE WITH WIDTH IS 700px */
+       }   
+
+/* media queries: for phone  refer:https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/  */
+@media(max-width:420px)
+    {
+    .card{
+        background-color: rgb(144, 160, 252);
+        width:90%;   /* WILL CHANGE THE 4 CARD TO 2 PAGES ON A PAGE WITH WIDTH IS 700px */
+       }       
+
+
+
+
+
+
+
+
+
+
+
+/* BASIC media queries: for tablet 
+@media(max-width:700px){
+    .card{
+        background-color: rgb(221, 172, 66);
+        width:50%;
+       }    */ 
+
+/* BASIC media queries: for mobile
+@media(max-width:420px){
+    .card{
+        background-color: cornflowerblue;
+        width:50%;
+    }*/ 
